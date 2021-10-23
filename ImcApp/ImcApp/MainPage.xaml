@@ -4,21 +4,29 @@
              x:Class="ImcApp.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame Margin="16" CornerRadius="0" BorderColor="LightGray">
+            <StackLayout>
+                <Label Text="Proporcine el peso de la persona en kilogramos" FontSize="Medium"></Label>
+                <Entry FontSize="Medium"></Entry>
+                <Label Text="Proporcione la estatura de la persona en metros" FontSize="Medium"></Label>
+                <Entry FontSize="Medium"></Entry>
+            </StackLayout>
+            
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+
+        <StackLayout Orientation="Horizontal" Padding="8" HorizontalOptions="Center">
+            <Button Text="Calcular" FontSize="Medium" WidthRequest="130"></Button>
+            <Button Text="Limpiar" FontSize="Medium" WidthRequest="130"></Button>
+        </StackLayout>
+
+        <Frame>
+            <StackLayout Orientation="Horizontal" Padding="8" HorizontalOptions="Center"> 
+                <Label Text="El índice de masa corporal de la persona es: " FontSize="Medium"></Label>
+                <Label Text="23.4567" HorizontalOptions="Center" FontSize="36"></Label>
+                <Label Text="La situacion nutricional de la persona es: " FontSize="Medium"></Label>
+                <Label Text="Peso normal" HorizontalOptions="Center" FontSize="36"></Label>
+            </StackLayout>
+        </Frame>
     </StackLayout>
 
 </ContentPage>
