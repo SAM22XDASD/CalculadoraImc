@@ -7,24 +7,24 @@
         <Frame Margin="16" CornerRadius="0" BorderColor="LightGray">
             <StackLayout>
                 <Label Text="Proporcine el peso de la persona en kilogramos" FontSize="Medium"></Label>
-                <Entry FontSize="Medium"></Entry>
+                <Entry FontSize="Medium" x:Name="pesoEntry"></Entry>
                 <Label Text="Proporcione la estatura de la persona en metros" FontSize="Medium"></Label>
-                <Entry FontSize="Medium"></Entry>
+                <Entry FontSize="Medium" x:Name="estaturaEntry"></Entry>
             </StackLayout>
             
         </Frame>
 
         <StackLayout Orientation="Horizontal" Padding="8" HorizontalOptions="Center">
-            <Button Text="Calcular" FontSize="Medium" WidthRequest="130"></Button>
-            <Button Text="Limpiar" FontSize="Medium" WidthRequest="130"></Button>
+            <Button Text="Calcular" FontSize="Medium" WidthRequest="130" x:Name="calcularButton" Clicked="calcularButton_Clicked"></Button>
+            <Button Text="Limpiar" FontSize="Medium" WidthRequest="130" x:Name="limpiarButton" Clicked="limpiarButton_Clicked"></Button>
         </StackLayout>
 
         <Frame>
             <StackLayout Orientation="Horizontal" Padding="8" HorizontalOptions="Center"> 
                 <Label Text="El índice de masa corporal de la persona es: " FontSize="Medium"></Label>
-                <Label Text="23.4567" HorizontalOptions="Center" FontSize="36"></Label>
+                <Label Text="23.4567" HorizontalOptions="Center" FontSize="36" x:Name="imcLabel"></Label>
                 <Label Text="La situacion nutricional de la persona es: " FontSize="Medium"></Label>
-                <Label Text="Peso normal" HorizontalOptions="Center" FontSize="36"></Label>
+                <Label Text="Peso normal" HorizontalOptions="Center" FontSize="36" x:Name="situacionNutricionalLabel"></Label>
             </StackLayout>
         </Frame>
     </StackLayout>
